@@ -151,6 +151,12 @@ input[type=text], select {
    outline: none;
 }
 
+table.chat{
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .balloon{
  	position: relative;
 	display: inline-block;
