@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="Content-Language" content="ja">
+<meta name="home" content="このページはトップページです">
+<meta name="keyword" content="掲示板, MySQL, PHP">
+<title>たかたの掲示板</title>
+<link rel="stylesheet" href="./kantan2.css">
+</head>
+
+<body>
+<p class="title">たかたの掲示板</p>
+
+<p>
+<form method="POST" action="kantan2_syori.php">
+<div>メッセージを表示します</div>
+<input type="image" value="メッセージ表示" class="btn_blue">
+<input type="hidden" name="h" value="sel">
+</form>
+</p>
+
+<hr>
+<p>
+<form method="POST" action="kantan2_syori.php">
+<div>名前を入力して<input type="text" name="a1"></div>
+<div>メッセージを入力して<input type="text" name="a2" size=150></div>
+<input type="image" value="メッセージ送信" class="btn_blue">
+<input type="hidden" name="h" value="ins">
+</form>
+</p>
+
+<hr>
+<p>
+<form method="POST" action="kantan2_syori.php">
+<div>削除する番号を入力して<input type="text" name="b1"></div>
+<input type="image" value="削除番号送信" class="btn_blue">
+<input type="hidden" name="h" value="del">
+</form>
+</p>
+
+<hr>
+<p>
+<form method="POST" action="kantan2_syori.php">
+<div>検索のキーワードを入力して<input type="text" name="c1"></div>
+<input type="image" value="検索" class="btn_blue">
+<input type="hidden" name="h" value="ser">
+</form>
+</p>
+
+<hr>
+<p>
+<form method="POST" action="kantan2_syori.php">
+<input type="image" value="テーブル再構築" class="btn_red">
+<input type="hidden" name="h" value="reb">
+</form>
+</p>
+</body>
+</html>
+

@@ -1,0 +1,126 @@
+body{
+  background: linear-gradient(Snow, Gold);
+  font-family: "Meiryo";
+  text-align: center;
+}
+
+p.title{
+  font-size: 50px;
+  color: DarkCyan;
+  font-weight: bold;
+  text-align: center;
+  text-shadow: 3px 3px 1px black;
+}
+
+input.red{
+  color: red;
+}
+
+.btn_blue{
+  position: relative;
+  display: inline-block;
+  font-weight: bold;
+  padding: 12px 0 8px;
+  text-decoration: none;
+  color: Teal;
+  transition: .4s;
+}
+
+.btn_blue:before{
+  position: absolute;
+  content: '';
+  width: 100%;
+  height: 4px;
+  top:100%;
+  left: 0;
+  border-radius: 3px;
+  background: Teal;
+  transition: .2s;
+}
+
+.btn_blue:after{
+  position: absolute;
+  content: '';
+  width: 100%;
+  height: 4px;
+  top:0;
+  left: 0;
+  border-radius: 3px;
+  background: Teal;
+  transition: .2s;
+}
+
+.btn_blue:hover:before{
+  top: -webkit-calc(100% - 3px);
+  top: calc(100% - 3px);
+}
+
+.btn_blue:hover:after{
+  top: 3px;
+}
+
+.btn_red{
+  position: relative;
+  display: inline-block;
+  font-weight: bold;
+  padding: 12px 0 8px;
+  text-decoration: none;
+  color: Tomato;
+  transition: .4s;
+}
+
+.btn_red:before{
+  position: absolute;
+  content: '';
+  width: 100%;
+  height: 4px;
+  top:100%;
+  left: 0;
+  border-radius: 3px;
+  background: Tomato;
+  transition: .2s;
+}
+
+.btn_red:after{
+  position: absolute;
+  content: '';
+  width: 100%;
+  height: 4px;
+  top:0;
+  left: 0;
+  border-radius: 3px;
+  background: Tomato;
+  transition: .2s;
+}
+
+.btn_red:hover:before{
+  top: -webkit-calc(100% - 3px);
+  top: calc(100% - 3px);
+}
+
+.btn_red:hover:after{
+  top: 3px;
+}
+
+input[type=text]{
+   border-radius: 5px;
+   -moz-border-radius: 5px;
+   -webkit-border-radius: 5px;
+   -o-border-radius: 5px;
+   -ms-border-radius: 5px;
+   border:#a9a9a9 1px solid;
+   -moz-box-shadow: inset 0 0 5px rgba(0,0,0,0.2),0 0 2px rgba(0,0,0,0.3);
+   -webkit-box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.2),0 0 2px rgba(0,0,0,0.3);
+   box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.2),0 0 2px rgba(0,0,0,0.3);
+   width:200px;
+   height:25px;
+   padding:0 3px;
+}
+ 
+input[type=text]:focus {
+   border:solid 1px #20b2aa;
+}
+ 
+input[type=text], select { 
+   outline: none;
+}
