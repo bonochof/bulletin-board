@@ -60,7 +60,7 @@ try{
   }
 
   /*** トップページへのリンク ***/
-  echo "<br><a href='kantan2.html'>トップメニューに戻ります</a>";
+  echo "<br><a href='kantan2.html' class='btn_blue'>トップメニューに戻ります</a>";
 }
 catch(Exception $e){
   var_dump($e);
