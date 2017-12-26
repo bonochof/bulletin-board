@@ -50,14 +50,19 @@ try{
   }
 
   /*** queryの結果を表示 ***/
+  echo "<table class='chat'>";
   while($kekka = $re->fetch()){
+    echo "<tr><td>";
     echo $kekka[0];
-    echo ": ";
+    echo "</td><td>";
     echo $kekka[1];
+    echo "</td><td>";
     echo "<div class='balloon'><p>";
     echo $kekka[2];
-    echo "</p></div><br>";
+    echo "</p></div>";
+    echo "</td></tr>";
   }
+  echo "</table>";
 
   /*** トップページへのリンク ***/
   echo "<br><a href='kantan2.html' class='btn_blue'>トップメニューに戻ります</a>";
