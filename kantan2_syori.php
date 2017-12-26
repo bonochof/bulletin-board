@@ -50,7 +50,6 @@ try{
   }
 
   /*** queryの結果を表示 ***/
-
   while($kekka = $re->fetch()){
     echo $kekka[0];
     echo ": ";
