@@ -13,7 +13,7 @@ $head = <<<EOH
 EOH;
 echo $head;
 echo "<body>";
-echo "<p class='title'>たかたの掲示板</p>";
+echo "<p><h1>たかたの掲示板</h1></p>";
 
 try{
   /*** DB接続 ***/
