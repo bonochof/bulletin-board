@@ -53,11 +53,11 @@ try{
 
   while($kekka = $re->fetch()){
     echo $kekka[0];
-    echo " : ";
+    echo ": ";
     echo $kekka[1];
-    echo " : ";
+    echo "<div class='balloon'><p>";
     echo $kekka[2];
-    echo "<br>";
+    echo "</p></div><br>";
   }
 
   /*** トップページへのリンク ***/
