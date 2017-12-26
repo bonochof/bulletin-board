@@ -12,6 +12,32 @@ p.title{
   text-shadow: 3px 3px 1px black;
 }
 
+h1{
+  position: relative;
+  color: #158b2b;
+  font-size: 40px;
+  padding: 10px 0;
+  text-align: center;
+  margin: 1.5em 0;
+}
+
+h1:before{
+  content: "";
+  position: absolute;
+  top: -8px;
+  left: 50%;
+  width: 150px;
+  height: 78px;
+  border-radius: 50%;
+  border: 5px solid #a6ddb0;
+  border-left-color: transparent;
+  border-right-color: transparent;
+  -moz-transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
+}
+
 input.red{
   color: red;
 }
