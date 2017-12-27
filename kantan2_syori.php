@@ -3,12 +3,14 @@
 echo "<html>";
 $head = <<<EOH
 <head>
-<meta charset="UTF-8">
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8">
 <meta http-equiv="Content-Language" content="ja">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<meta http-equiv="Content-Script-Type" content="text/javascript">
 <meta name="home" content="このページはDB処理用ページです">
 <meta name="keyword" content="掲示板, MySQL, PHP">
 <title>たかたの掲示板</title>
-<link rel="stylesheet" href="./kantan2.css">
+<link rel="stylesheet" href="./kantan2.css" type="text/css">
 </head>
 EOH;
 echo $head;
