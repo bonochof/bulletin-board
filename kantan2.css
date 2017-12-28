@@ -161,6 +161,36 @@ table.chat{
   margin-right: auto;
 }
 
+.num{
+  position: relative;
+  line-height: 1.4;
+  padding:0.25em 1em;
+  display: inline-block;
+  top:0;
+}
+
+.num:before,.num:after{
+  position: absolute;
+  top: 0;
+  content:'';
+  width: 8px;
+  height: 100%;
+  display: inline-block;
+}
+.num:before{
+  border-left: solid 1px black;
+  border-top: solid 1px black;
+  border-bottom: solid 1px black;
+  left: 0;
+}
+.num:after{
+  content: '';
+  border-top: solid 1px black;
+  border-right: solid 1px black;
+  border-bottom: solid 1px black;
+  right: 0;
+}
+
 .balloon{
  	position: relative;
 	display: inline-block;
