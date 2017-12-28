@@ -54,7 +54,7 @@ try{
   /*** queryの結果を表示 ***/
   echo "<table class='chat'>";
   while($kekka = $re->fetch()){
-    echo "<tr><td>";
+    echo "<tr><td class='num'>";
     echo $kekka[0];
     echo "</td><td>";
     echo $kekka[1];
