@@ -19,7 +19,7 @@ echo "<p><h1>たかたの掲示板</h1></p>";
 
 try{
   /*** DB接続 ***/
-  $s = new PDO("mysql:host=localhost;dbname=DB_j1318", "j1318");
+  $s = new PDO("mysql:host=localhost;dbname=DB_j1318;charset=utf8", "j1318");
 
   /*** nameがhのvalueを変数$h_dに代入 ***/
   $h_d = $_POST["h"];
