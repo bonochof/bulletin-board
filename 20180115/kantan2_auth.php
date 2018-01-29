@@ -34,7 +34,7 @@ case "judge":
   }
 case "login":
   echo "<table class='login'><tr><td>ID</td><td><input type='text' name='id'></td></tr>";
-  echo "<tr><td>パスワード</td><td><input type='text' name='pwd'></td></tr></table>";
+  echo "<tr><td>パスワード</td><td><input type='password' name='pwd'></td></tr></table>";
   echo "<input type='image' value='ログイン' class='btn_black'>";
   echo "<input type='hidden' name='h' value='judge'>";
   break;
