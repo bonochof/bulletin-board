@@ -39,7 +39,9 @@ try{
       break;
     case "del":
       $b1_d = $_POST["b1"];
-      $s->query("delete from tbk where bang=$b1_d");
+      if(preg_match("/^[0-9]+$/", $b1_d)){
+        $s->query("delete from tbk where bang=$b1_d");
+      }
       $re = $s->query("select * from tbk order by bang");
       break;
     case "ser":
