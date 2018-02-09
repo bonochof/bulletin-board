@@ -47,7 +47,7 @@ try{
     case "ser":
       $c1_d = $_POST["c1"];
       $c2_d = $_POST["c2"];
-      $words = preg_split('/[\s]+/', $c1_d);
+      $words = preg_split('/[\s]+/', mb_convert_kana($c1_d, 's', 'UTF-8'));
       $query = "select * from tbk where (nama like '%$words[0]%' or  mess like '%$words[0]%') ";
       for($i = 1; $i < count($words); $i++){
         if($c2_d == 'and'){
