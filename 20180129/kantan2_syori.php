@@ -72,12 +72,12 @@ try{
   echo "<table class='chat'>";
   while($kekka = $re->fetch()){
     echo "<tr><td class='num'>";
-    echo $kekka[0];
+    echo htmlspecialchars($kekka[0]);
     echo "</td><td>";
-    echo $kekka[1];
+    echo htmlspecialchars($kekka[1]);
     echo "</td><td>";
     echo "<div class='balloon'><p>";
-    echo $kekka[2];
+    echo htmlspecialchars($kekka[2]);
     echo "</p></div>";
     echo "</td></tr>";
   }
