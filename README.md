@@ -1,4 +1,4 @@
-# bulletin-board
+# たかたの掲示板
 My bulletin board using PHP and MySQL
 
 ![snapshot](./image.PNG)
