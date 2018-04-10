@@ -8,7 +8,7 @@ My bulletin board using PHP and MySQL
 * メッセージ表示
 * メッセージ送信
 * メッセージ削除
-* メッセージ検索
+* キーワード検索
 * DB初期化
 
 ## 開発環境
